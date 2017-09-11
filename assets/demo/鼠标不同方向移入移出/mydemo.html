@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的demo</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" scr="js/mydemo.js"></script>
+<style>
+        body, html, ul, p, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .content {
+            position: absolute;
+            z-index: 2;
+            background-color: lightcoral;
+            width: 100%;
+            height: 100%;
+            left: -100%;
+            top: -100%;
+            line-height: 198px;
+            text-align: center;
+            color: #fff;
+            font-size: 70px;
+        }
+
+        .content.trans {
+            transition: all 1s;
+            backface-visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="content">
+1
+    </div>
+</div><div class="box">
+
+    <div class="content">
+2
+    </div>
+</div><div class="box">
+
+    <div class="content">
+3
+    </div>
+</div><div class="box">
+
+    <div class="content">
+4
+    </div>
+</div>
+<script type="text/javascript">
+//元素调用的对比
+//元素调用与$element的关系
+//
+$(".box").MouseDirection({
+	enter:function($element,dir){
+		var $content=$element.find(".content").removeClass("trans");
+
+		//调整位置
+		$content.css(DIR_POS[dir]);
+
+		//reflow
+		$content[0].offsetWidth;
+
+		$elemen.addClass("trans");
+
+		$element.css({
+			left:0,
+			top:0
+		})
+
+	},
+	leave:function($element,dir){
+		$element.find(".content").css(DIR_POS[dir]);
+	}
+
+})
+
+</script>
+</body>
+</html>

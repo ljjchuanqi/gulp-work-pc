@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.u_a1{
+		    position: absolute;
+		    left: 1450px;
+		    top: 195px;
+		}
+		.u_a2{
+		    position: absolute;
+		    left: 200px;
+		    top: 5px;
+		}
+		.u_a3{
+		    position: absolute;
+		    left: 410px;
+		    top: 610px;
+		}
+	</style>
+</head>
+<body>
+	<ul id="j_scene" class="j_scene">
+		<li class="layer" data-depth="0.00">
+			<img src="images/banner_01.jpg" />
+			<img src="images/banner_02.jpg" />
+			<img src="images/banner_03.png" />
+
+		</li>
+		<li class="layer" data-depth="0.10">
+			<div class="u_a1">
+				<img src="images/b_01.png"></div>
+		</li>
+		<li class="layer" data-depth="0.20">
+			<div class="u_a2">
+				<img src="images/b_02.png"></div>
+		</li>
+		<li class="layer" data-depth="0.05">
+			<div class="u_a3">
+				<img src="images/b_03.png"></div>
+		</li>
+	</ul>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<div>1111</div>
+	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script type="text/javascript">
+		//banner特效
+		var ua = navigator.userAgent;
+		var browser = navigator.appName
+		var b_version = navigator.appVersion
+		var version = b_version.split(";");
+		var trim_Version = version[1].replace(/[ ]/g, "");
+		if (!(browser == "Microsoft Internet Explorer" && (trim_Version == "MSIE7.0" || trim_Version == "MSIE8.0" || trim_Version == "MSIE9.0"))) {
+			$('#j_scene').parallax({
+				limitY: 0,
+			})
+		};
+	</script>
+</body>
+</html>

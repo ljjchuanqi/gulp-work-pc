@@ -1,0 +1,128 @@
+  .user {
+      float: left;
+      position: relative;
+      margin-top: 14px;
+  }
+  
+  .user .user-name {
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 5px;
+      width: 90px;
+      border-bottom: none;
+      line-height: 26px;
+      border: 1px solid #fff;
+  }
+  
+  .user .user-name span {
+      color: #333;
+      font-size: 14px;
+  }
+  
+  .user .user-name .icon {
+      display: inline-block;
+      width: 9px;
+      height: 5px;
+      background: url(../images/arr_01.png) no-repeat;
+      vertical-align: middle;
+      margin-left: 8px;
+      transition: all 0.5s;
+  }
+  
+  .user .user-list {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 27px;
+      width: 90px;
+      background-color: #fff;
+      padding-left: 10px;
+      z-index: 2;
+      border: 1px solid #e5e5e5;
+      border-top: none;
+      transition: all 0.3s;
+  }
+  
+  .user .user-list li {
+      height: 24px;
+      line-height: 24px;
+  }
+  
+  .user .user-list li a {
+      color: #333;
+      font-size: 14px;
+  }
+  
+  .user_open .user-name {
+      border: 1px solid #e5e5e5;
+      border-bottom: none;
+  }
+  
+  .user_open .user-name .icon {
+      background: url(../images/arr_02.png) no-repeat;
+  }
+  
+  .user_open .user-list {
+      -webkit-animation: fadeIn 0.5s both;
+      animation: fadeIn 0.5s both;
+  }
+  
+  .user_close .user-name {
+      border: 1px solid #fff;
+      border-bottom: none;
+  }
+  
+  .user_close .user-name .icon {
+      background: url(../images/arr_01.png) no-repeat;
+  }
+  
+  .user_close .user-list {
+      -webkit-animation: fadeOut 0.5s both;
+      animation: fadeOut 0.5s both;
+  }
+  
+  @-webkit-keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
+  .fadeIn {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+  }
+  
+  @-webkit-keyframes fadeOut {
+      from {
+          opacity: 1;
+      }
+      to {
+          opacity: 0;
+      }
+  }
+  
+  @keyframes fadeOut {
+      from {
+          opacity: 1;
+      }
+      to {
+          opacity: 0;
+      }
+  }
+  
+  .fadeOut {
+      -webkit-animation-name: fadeOut;
+      animation-name: fadeOut;
+  }

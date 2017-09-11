@@ -1,0 +1,86 @@
+.m_pic {
+    .top {
+        height: rem(60);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .bottom {
+        a {
+            float: left;
+            width: 50%;
+            height: rem(218);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.m_pic1 {
+    padding: rem(20) 0 rem(10);
+    img {
+        width: 100%;
+    }
+}
+
+.m_map {
+    img {
+        width: 100%;
+    }
+}
+
+.m_videoBox {
+    width: 100%;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .pic {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    .shade {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        .icon {
+            width: rem(104);
+            height: rem(84);
+            background: url(../images/icon_video.png) no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .txt {
+        em {
+            display: inline-block;
+            width: rem(5);
+            height: rem(9);
+            background: url(../images/icon_arr.png) no-repeat;
+            background-size: 100% 100%;
+            vertical-align: rem(3);
+            margin-right: rem(6);
+        }
+        span {
+            color: #1b2223;
+            font-size: rem(20);
+            line-height: rem(40);
+        }
+    }
+}

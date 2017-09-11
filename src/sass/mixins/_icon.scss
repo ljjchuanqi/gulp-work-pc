@@ -1,0 +1,7 @@
+@mixin iconbox($width, $height,$backgroundSize:cover, $marginRight:0) {
+    display: inline-block;
+    width: rem($width);
+    height: rem($height);
+    background-size: $backgroundSize;
+    margin-right: rem($marginRight);
+}

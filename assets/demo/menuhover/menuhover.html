@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/menuhover.css" />
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="user j_user">
+        <a href="###" class="user-name">
+            <span>维尼小熊</span><i class="icon"></i>
+        </a>
+        <ul class="user-list">
+            <li>
+                <a href="###">供应商站</a>
+            </li>
+            <li>
+                <a href="###">品牌商站</a>
+            </li>
+            <li>
+                <a href="###">产业财经</a>
+            </li>
+            <li>
+                <a href="###">国际站</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    (function($) {
+        $(document).ready(function() {
+            /*****************订单管理页面***********************/
+            //筛选查看订单时间
+            function menuHover(containerStr, listStr, startClass, endClass) {
+                var ocontainer = $(containerStr);
+                var olist = ocontainer.find(listStr);
+                var timer;
+                ocontainer.hover(function() {
+                    clearTimeout(timer);
+                    olist.show();
+                    ocontainer.addClass(startClass);
+                    ocontainer.removeClass(endClass);
+                }, function() {
+                    ocontainer.removeClass(startClass);
+                    ocontainer.addClass(endClass);
+                    timer = setTimeout(function() {
+                        olist.hide();
+                    }, 500)
+                })
+            }
+            menuHover('.j_user', '.user-list', 'user_open ', 'user_close');
+        })
+    })(jQuery);
+</script>
+
+</html>

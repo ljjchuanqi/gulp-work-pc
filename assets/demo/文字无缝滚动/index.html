@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>旅行的味道-首页</title>
+    <style type="text/css">
+        #gongao {
+            width: 100%;
+            height: 30px;
+            overflow: hidden;
+            line-height: 30px;
+            font-size: 16px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .scroll_div {
+            width: 80%;
+            margin: 0 auto;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        #gongao #scroll_begin,
+        #gongao #scroll_end {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gongao">
+        <div style="" id="scroll_div" class="scroll_div">
+            <div id="scroll_begin">
+                永高人永高永高高
+            </div>
+            <div id="scroll_end"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //文字滚动
+        function ScrollImgLeft() {
+            var speed = 10;
+            var scroll_begin = document.getElementById("scroll_begin");
+            var scroll_end = document.getElementById("scroll_end");
+            var scroll_div = document.getElementById("scroll_div");
+            var begin_offsetWidth = scroll_begin.offsetWidth;
+            var div_offsetWidth = scroll_div.offsetWidth;
+            if (begin_offsetWidth < div_offsetWidth) {
+                scroll_begin.style.width = scroll_div.offsetWidth + 'px';
+                scroll_end.style.width = scroll_div.offsetWidth + 'px';
+            }
+            scroll_end.innerHTML = scroll_begin.innerHTML;
+
+            function Marquee() {
+                if (scroll_end.offsetWidth - scroll_div.scrollLeft <= 0)
+                    scroll_div.scrollLeft -= scroll_begin.offsetWidth;
+                else
+                    scroll_div.scrollLeft++;
+
+
+            }
+            var MyMar = setInterval(Marquee, speed);
+            // scroll_div.onmouseover = function() {
+            //     clearInterval(MyMar);
+            // }
+            // scroll_div.onmouseout = function() {
+            //     MyMar = setInterval(Marquee, speed);
+            // }
+        };
+        ScrollImgLeft();
+    </script>
+</body>
+
+</html>

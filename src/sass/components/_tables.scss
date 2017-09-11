@@ -1,0 +1,48 @@
+.m_timeTable {
+    margin-top: rem(30);
+    margin-bottom: rem(30);
+    // padding: rem(20) 0;
+    width: 100%;
+    tr {
+        border-bottom: 1px solid #d5d5d5;
+    }
+    td {
+        position: relative;
+        padding: rem(12) 0;
+        .year {
+            color: #cd0e16;
+            font-size: rem(30);
+        }
+        .circle {
+            position: absolute;
+            bottom: rem(-5);
+            right: rem(-5);
+            width: rem(8);
+            height: rem(8);
+            background-color: #fff;
+            border: 1px solid #d5d5d5;
+            border-radius: 50%;
+        }
+        .txt {
+            color: #707070;
+            font-size: rem(24);
+            padding-left: rem(39);
+            position: relative;
+            line-height: rem(36);
+            &:before {
+                position: absolute;
+                left: rem(22);
+                top: rem(20);
+                content: "";
+                width: rem(2);
+                height: rem(2);
+                background-color: #cd0e16;
+            }
+        }
+    }
+    td.first {
+        width: rem(164);
+        text-align: center;
+        border-right: 1px solid #d5d5d5;
+    }
+}

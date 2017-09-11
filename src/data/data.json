@@ -1,0 +1,8 @@
+{
+    "title": "我是标题",
+    "students": [
+        { "name": "Moe" },
+        { "name": "Larry" },
+        { "name": "Curly" }
+    ]
+}

@@ -1,0 +1,5 @@
+@mixin font($fontSize, $color, $lineHeight) {
+    font-size: rem($fontSize);
+    color: $color;
+    line-height: rem($lineHeight);
+}

@@ -1,0 +1,149 @@
+.m_txt {
+    margin-top: rem(24);
+    margin-bottom: rem(24);
+    .pic {
+        float: left;
+        width: rem(300);
+        height: rem(200);
+        margin-right: rem(24);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .detail {
+        float: left;
+        width: rem(363);
+        p {
+            color: #666;
+            font-size: rem(18);
+            line-height: rem(30);
+        }
+        .more {
+            line-height: rem(30);
+            color: #cd0e16;
+            font-size: rem(18);
+        }
+    }
+}
+
+.m_txt2 {
+    .box {
+        padding-bottom: rem(28);
+        border-bottom: 1px dashed #d9d9d9;
+        padding-top: rem(10);
+    }
+    h3 {
+        font-weight: normal;
+        @include font(30, #cd0e16, 52);
+        text-align: center;
+    }
+    p {
+        @include font(24, #333, 40);
+    }
+}
+
+.m_txt2_l {
+    h3 {
+        @include font(32, #cd0e16, 52);
+        text-align: left;
+        margin-bottom: rem(16);
+    }
+    .pic {
+        padding: rem(22) 0;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.m_txt3 {
+    .box {
+        padding-bottom: rem(28);
+        border-bottom: 1px dashed #d9d9d9;
+        padding-top: rem(10);
+    }
+    p {
+        @include font(24, #333, 40);
+        text-align: left;
+        em {
+            color: #cd0e16;
+        }
+    }
+}
+
+.m_mapTxt {
+    .pic {
+        img {
+            width: 100%;
+        }
+    }
+    .slogn {
+        @include font(30, #cd0e16, 42);
+        padding: rem(35) 0;
+    }
+    .txt {
+        @include font(24, #5d5d5d, 40);
+        padding-bottom: rem(50);
+    }
+}
+
+.m_info {
+    .box {
+        padding-bottom: rem(23);
+        padding-top: rem(23);
+        border-bottom: 1px dashed #cdcdcd;
+    }
+    .box_1 {
+        border-bottom: none;
+    }
+    h3 {
+        font-weight: normal;
+        color: #cd0e16;
+        font-size: rem(34);
+        line-height: rem(42);
+    }
+    .en {
+        @include font(20, #595959, 30);
+        margin-bottom: rem(25);
+    }
+    p {
+        @include font(20, #333, 38);
+    }
+}
+
+.m_newsContent {
+    padding-top: rem(30);
+    .tit {
+        color: #cd0e16;
+        font-size: rem(28);
+        line-height: rem(42);
+        margin-bottom: rem(6);
+        text-align: center;
+    }
+    .other {
+        color: #666666;
+        font-size: rem(18);
+        line-height: rem(24);
+        margin-bottom: rem(30);
+        text-align: center;
+        span {
+            margin-right: rem(24);
+        }
+    }
+    .content {
+        p {
+            color: #666666;
+            font-size: rem(20);
+            line-height: rem(34);
+            margin-bottom: rem(18);
+        }
+        .pic {
+            text-align: center;
+            margin-bottom: rem(20);
+        }
+        .box {
+            text-align: center;
+        }
+    }
+}

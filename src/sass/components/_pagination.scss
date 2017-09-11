@@ -1,0 +1,17 @@
+.m_pagination {
+    padding: rem(15) 0;
+    font-size: 0;
+    text-align: center;
+    a {
+        width: rem(155);
+        height: rem(55);
+        @include font(24, #4f5253, 55);
+        border: 1px solid #d4d4d4;
+        display: inline-block;
+        margin: 0 rem(10);
+    }
+    .next {
+        background-color: #d01d25;
+        color: #fff;
+    }
+}

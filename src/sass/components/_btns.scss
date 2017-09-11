@@ -1,0 +1,13 @@
+.m_more {
+    text-align: center;
+    padding: rem(18) 0;
+    a {
+        display: inline-block;
+        width: rem(180);
+        height: rem(55);
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        text-align: center;
+        @include font(24, #8f8f8f, 55);
+    }
+}

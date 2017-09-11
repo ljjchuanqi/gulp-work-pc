@@ -1,0 +1,65 @@
+.m_board {
+    background-color: #fff;
+    padding: rem(20) rem(18);
+    h3 {
+        color: #cd0e16;
+        font-size: rem(30);
+        text-align: left;
+        font-weight: normal;
+        line-height: rem(40);
+        margin-bottom: rem(20);
+    }
+    .box {
+        margin-bottom: rem(8);
+        input {
+            box-sizing: border-box;
+            height: rem(50);
+            color: #333;
+            font-size: rem(24);
+            padding: rem(6) rem(12);
+            width: 100%;
+            line-height: rem(30);
+            border: 1px solid #e5e5e5;
+            background-color: #fff;
+        }
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
+            border: none;
+            border: 1px solid #f2f2f2;
+            background-color: #fff;
+            padding: rem(12);
+            color: #333;
+            font-size: rem(24);
+            outline: none;
+            &.t1 {
+                height: rem(170);
+            }
+        }
+        .submit {
+            display: inline-block;
+            width: rem(161);
+            height: rem(60);
+            color: #fff;
+            font-size: rem(24);
+            line-height: rem(60);
+            background-color: #a30000;
+            text-align: center;
+            margin-right: rem(20);
+        }
+        .cancel {
+            display: inline-block;
+            width: rem(161);
+            height: rem(60);
+            color: #333;
+            font-size: rem(24);
+            line-height: rem(60);
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+    }
+    .box_c {
+        padding-top: rem(10);
+        text-align: center;
+    }
+}

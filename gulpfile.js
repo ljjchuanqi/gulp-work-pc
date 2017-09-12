@@ -85,10 +85,11 @@ gulp.task('css', function() {
 //babel编译js代码
 gulp.task('babel', function() {
     return gulp.src(D_DIR + 'babel/*.js')
-        .pipe(babel())
+        .pipe(babel({
+            presets:['env']
+        }))
         .pipe(gulp.dest(D_DIR + 'js'))
 });
-
 
 //将相关项目文件复制到dist文件夹下
 gulp.task('cp', function() {
